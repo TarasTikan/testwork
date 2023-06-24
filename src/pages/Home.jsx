@@ -1,6 +1,8 @@
+import { MainHome } from "components/MainHome/MainHome"
+
 export const Home = () => {
     return (
     <>
-      <main><h1>Hello</h1></main>
+      <main><MainHome/></main>
     </>)
 }
