@@ -31,7 +31,7 @@ export const LineUser = styled.div`
   height: 8px;
 `;
 export const RoundUser = styled.div`
-  background-image: url(${({image})=> `${image}`});
+  background-image: url(${({ image }) => `${image}`});
   border: 8px solid;
   background-size: cover;
   background-position: 50% 50%;
