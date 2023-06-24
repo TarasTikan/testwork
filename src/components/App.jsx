@@ -1,16 +1,20 @@
+// import { Home } from "pages/Home";
+// import { CardUser } from "./CardUser/CardUser";
+
+import { Home } from "pages/Home";
+import { Tweets } from "pages/Tweets";
+import { Route, Routes } from "react-router-dom";
+import { Navigation } from "./Navigation/Navigation";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+    <Routes>
+      <Route path='/' element={<Navigation/>}>
+        <Route index element={<Home/>}/>
+        <Route path="tweets" element={<Tweets/>}/>
+      </Route>
+    </Routes>
+    </>
   );
 };
