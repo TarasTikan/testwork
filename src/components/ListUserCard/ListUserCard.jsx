@@ -1,10 +1,16 @@
 import { CardUser } from 'components/CardUser/CardUser';
-import { BtnBack, ListUsers, SectionUsers} from './ListUserCard.styled';
+import { BtnBack, ListUsers, SectionUsers } from './ListUserCard.styled';
 import { BtnLoadMore } from 'components/BtnLoadMore/BtnLoadMore';
 import { nanoid } from 'nanoid';
 import { Loader } from 'components/Loader/Loader';
 
-export const ListUserCard = ({ loadBtn, BackBtn, users, visibleBtn, isLoading }) => {
+export const ListUserCard = ({
+  loadBtn,
+  BackBtn,
+  users,
+  visibleBtn,
+  isLoading,
+}) => {
   return (
     <SectionUsers>
       <BtnBack onClick={BackBtn} type="button">
@@ -15,7 +21,7 @@ export const ListUserCard = ({ loadBtn, BackBtn, users, visibleBtn, isLoading })
           <CardUser userItem={user} key={nanoid()} id={user.id} />
         ))}
       </ListUsers>
-      {isLoading && <Loader/>}
+      {isLoading && <Loader />}
       {visibleBtn && <BtnLoadMore loadMore={loadBtn} />}
     </SectionUsers>
   );

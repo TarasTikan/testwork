@@ -1,8 +1,11 @@
-import { MainHome } from "components/MainHome/MainHome"
+import { MainHome } from 'components/MainHome/MainHome';
 
 export const Home = () => {
-    return (
+  return (
     <>
-      <main><MainHome/></main>
-    </>)
-}
+      <main>
+        <MainHome />
+      </main>
+    </>
+  );
+};

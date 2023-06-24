@@ -18,11 +18,10 @@ export const CardUser = ({ userItem, id }) => {
   );
   const handleBtnFollow = e => {
     setIsFollow(!isFollow);
-    if (!isFollow){
+    if (!isFollow) {
       userItem.followers = String(Number(userItem.followers) + 1);
       localStorage.setItem(`userFollowing${id}`, JSON.stringify(!isFollow));
-    } 
-    else{
+    } else {
       userItem.followers = String(Number(userItem.followers) - 1);
       localStorage.removeItem(`userFollowing${id}`);
     }

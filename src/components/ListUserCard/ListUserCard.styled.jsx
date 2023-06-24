@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
 export const ListUsers = styled.ul`
-list-style: none;
-display: flex;
-flex-direction: column;
-gap: 25px;
-margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 20px;
 `;
 export const SectionUsers = styled.section`
   display: flex;

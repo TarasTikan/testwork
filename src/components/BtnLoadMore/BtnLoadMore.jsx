@@ -1,4 +1,4 @@
-import { BtnLoad } from "./BtnLoadMore.styled";
+import { BtnLoad } from './BtnLoadMore.styled';
 
 export const BtnLoadMore = ({ loadMore }) => {
   return (

@@ -4,13 +4,13 @@ export const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   padding: 0 16px;
+  background: linear-gradient(60deg, #8834fd 0%, #c756ec 100%);
 `;
 export const Header = styled.header`
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 27px 25px;
-  background: linear-gradient(60deg, #8834fd 0%, #c756ec 100%);
   box-shadow: -2.5776965618133545px 6.873857021331787px 20.621572494506836px 0px
     rgba(0, 0, 0, 0.23);
   > nav {
