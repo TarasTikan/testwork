@@ -1,6 +1,3 @@
-// import { Home } from "pages/Home";
-// import { CardUser } from "./CardUser/CardUser";
-
 import { Home } from 'pages/Home';
 import { Tweets } from 'pages/Tweets';
 import { Route, Routes } from 'react-router-dom';

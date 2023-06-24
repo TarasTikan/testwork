@@ -8,4 +8,3 @@ export const fetchUsers = page => {
 export const fetchUpdateUser = (id, updateUser) => {
   return axios.put(`${BASE_URL}/user/${id}`, updateUser);
 };
-
