@@ -1,8 +1,9 @@
 import { CardUser } from 'components/CardUser/CardUser';
-import { BtnBack, ListUsers, SectionUsers } from './ListUserCard.styled';
+import { ListUsers, SectionUsers } from './ListUserCard.styled';
 import { BtnLoadMore } from 'components/BtnLoadMore/BtnLoadMore';
 import { nanoid } from 'nanoid';
 import { Loader } from 'components/Loader/Loader';
+import { BtnBack } from 'components/BtnBack/BtnBack';
 
 export const ListUserCard = ({
   loadBtn,
@@ -13,9 +14,7 @@ export const ListUserCard = ({
 }) => {
   return (
     <SectionUsers>
-      <BtnBack onClick={BackBtn} type="button">
-        Back
-      </BtnBack>
+      <BtnBack/>
       <ListUsers>
         {users.map(user => (
           <CardUser userItem={user} key={nanoid()} id={user.id} />
