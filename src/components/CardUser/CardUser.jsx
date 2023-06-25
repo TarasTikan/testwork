@@ -1,5 +1,6 @@
 import Logo from '../../images/Logo.png';
 import pictureMain from '../../images/pictureMain.png';
+import PropTypes from 'prop-types';
 import {
   BtnFollow,
   ContainerCard,
@@ -56,4 +57,9 @@ export const CardUser = ({ userItem, id }) => {
       </BtnFollow>
     </ContainerCard>
   );
+};
+
+CardUser.propTypes = {
+  userItem: PropTypes.object.isRequired,
+  id: PropTypes.string.isRequired,
 };

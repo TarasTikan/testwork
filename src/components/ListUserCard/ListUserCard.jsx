@@ -4,17 +4,11 @@ import { BtnLoadMore } from 'components/BtnLoadMore/BtnLoadMore';
 import { nanoid } from 'nanoid';
 import { Loader } from 'components/Loader/Loader';
 import { BtnBack } from 'components/BtnBack/BtnBack';
-
-export const ListUserCard = ({
-  loadBtn,
-  BackBtn,
-  users,
-  visibleBtn,
-  isLoading,
-}) => {
+import PropTypes from 'prop-types';
+export const ListUserCard = ({ loadBtn, users, visibleBtn, isLoading }) => {
   return (
     <SectionUsers>
-      <BtnBack/>
+      <BtnBack />
       <ListUsers>
         {users.map(user => (
           <CardUser userItem={user} key={nanoid()} id={user.id} />
@@ -24,4 +18,11 @@ export const ListUserCard = ({
       {visibleBtn && <BtnLoadMore loadMore={loadBtn} />}
     </SectionUsers>
   );
+};
+
+ListUserCard.propTypes = {
+  users: PropTypes.array.isRequired,
+  visibleBtn: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  loadBtn: PropTypes.func.isRequired,
 };
